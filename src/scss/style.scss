@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext');
 @import './variables/variables';
 
+@import './blocks/promo';
+@import './blocks/upper';
+@import './blocks/button';
+@import './blocks/area';
+@import './blocks/title';
+@import './blocks/variants';
+@import './blocks/parking';
+@import './blocks/andersen';
+@import './blocks/footer';
+
 @import './base.scss';

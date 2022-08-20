@@ -1,0 +1,17 @@
+.area {
+    padding-top: 170px;
+    min-height: 600px;
+    padding-left: 10%;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        width: 60%;
+    }
+    &__descr {
+        margin-top: 10px;
+        color: $dark;
+        line-height: 1.6;
+    }
+}

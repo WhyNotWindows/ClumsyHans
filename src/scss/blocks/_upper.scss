@@ -1,0 +1,37 @@
+.upper {
+    z-index: 1;
+    transition: 0.4s all;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    &__contacts {
+        height: 28px;
+        background: $main-color;
+    }
+    &__contact {
+        margin-right: 15px;
+        line-height: 25px;
+        color: #fff;
+    }
+    &__logo {
+        transition: 0.4s all;
+        display: block;
+        height: 60px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        margin-right: 20px;
+        color: $dark;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__lang {
+        margin-right: 20px;
+    }
+}

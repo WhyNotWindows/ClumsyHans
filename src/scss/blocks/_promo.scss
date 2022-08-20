@@ -1,0 +1,36 @@
+.promo {
+    position: relative;
+    min-height: 106vh;
+    padding-top: 43vh;
+    background: rgba(217, 193, 145, .5);
+    &__header {
+        font-size: 55px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    &__subheader {
+        margin-top: 20px;
+        font-size: 40px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    &__advantages {
+        width: 100%;
+        max-width: 1280px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        bottom: 0;
+        transform: translateY(50%);
+    }
+    &__advantage {
+        text-align: center;
+        line-height: 100px;
+        height: 100px;
+        width: 250px;
+        font-size: 18px;
+        background: $orange-light;
+    }
+}

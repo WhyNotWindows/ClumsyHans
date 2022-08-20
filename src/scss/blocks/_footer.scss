@@ -1,0 +1,16 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: $main-color;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        color: #fff;
+    }
+    &__link {
+        color: #fff;
+        line-height: 1.6;
+    }
+}

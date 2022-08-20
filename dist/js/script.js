@@ -91,9 +91,30 @@
   !*** ./src/js/main.js ***!
   \************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-window.addEventListener('DOMContentLoaded', function () {});
+"use strict";
+
+
+window.addEventListener('DOMContentLoaded', function () {
+  var menu = document.querySelector('.upper__menu');
+  var logo = document.querySelector('.upper__logo');
+
+  if (window.pageYOffset == 0) {
+    menu.style.background = 'rgba(217, 193, 145, .2)';
+    logo.style.height = '100px';
+  }
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset == 0) {
+      menu.style.background = 'rgba(217, 193, 145, .2)';
+      logo.style.height = '100px';
+    } else {
+      logo.style.height = '60px';
+      menu.style.background = 'rgba(255, 255, 255, 1)';
+    }
+  });
+});
 
 /***/ })
 

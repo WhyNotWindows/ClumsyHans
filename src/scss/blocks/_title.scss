@@ -1,0 +1,13 @@
+.title {
+    line-height: 1.6;
+    font-size: 34px;
+    font-family: 'Times New Roman', Times, serif;
+    &_name {
+        width: 100.1%;
+        background: $orange-light;
+        text-align: center;
+        &_2 {
+            background: $main-color;
+        }
+    }
+}

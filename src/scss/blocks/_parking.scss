@@ -1,0 +1,28 @@
+.parking {
+    position: relative;
+    min-height: 100vh;
+    padding: 80px 0;
+    &__img {
+        width: 65%;
+        height: 400px;
+        background: rgba(217, 193, 145, .5);
+    }
+    &__descr {
+        padding: 60px;
+        position: absolute;
+        background: $main-color;
+        right: 0;
+        bottom: 80px;
+        width: 45%;
+        height: 370px;
+        color: #fff;
+        line-height: 1.7;
+    }
+    &__rules {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    &__link {
+        color: #fff;
+    }
+}
