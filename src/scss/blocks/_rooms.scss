@@ -1,0 +1,25 @@
+.rooms {
+    padding: 150px 0;
+    &__block {
+        margin-top: 110px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60vh;
+        &:nth-child(1) {
+            margin-top: 40px;
+        }
+    }
+    &__img {
+        width: 60%;
+        height: 100%;
+        background: rgba(217, 193, 145, .5);
+    }
+    &__descr {
+        width: 30%;
+    }
+    &__text {
+        color: $dark;
+        //opacity: .8;
+    }
+}

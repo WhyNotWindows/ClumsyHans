@@ -10,4 +10,9 @@
             background: $main-color;
         }
     }
+    &_main {
+        text-align: center;
+        color: $main-color;
+        font-size: 56px;
+    }
 }

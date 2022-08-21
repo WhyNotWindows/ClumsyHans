@@ -1,11 +1,16 @@
 .button {
-    margin-top: 25px;
+    margin-top: 30px;
     height: 60px;
     width: 180px;
     background: $main-color;
     color: #fff;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 28px;
     border: none;
     cursor: pointer;
+    &_send {
+        margin-top: 0;
+        height: 50px;
+        width: 110px;
+    }
 }

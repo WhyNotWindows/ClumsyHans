@@ -75,15 +75,20 @@
 }
 
 .button {
-  margin-top: 25px;
+  margin-top: 30px;
   height: 60px;
   width: 180px;
   background: #bd9a58;
   color: #fff;
-  border-radius: 15px;
+  border-radius: 10px;
   font-size: 28px;
   border: none;
   cursor: pointer;
+}
+.button_send {
+  margin-top: 0;
+  height: 50px;
+  width: 110px;
 }
 
 .area {
@@ -116,6 +121,11 @@
 }
 .title_name_2 {
   background: #bd9a58;
+}
+.title_main {
+  text-align: center;
+  color: #bd9a58;
+  font-size: 56px;
 }
 
 .variants {
@@ -254,6 +264,99 @@
 .footer__link {
   color: #fff;
   line-height: 1.6;
+}
+
+.rooms {
+  padding: 150px 0;
+}
+.rooms__block {
+  margin-top: 110px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+}
+.rooms__block:nth-child(1) {
+  margin-top: 40px;
+}
+.rooms__img {
+  width: 60%;
+  height: 100%;
+  background: rgba(217, 193, 145, 0.5);
+}
+.rooms__descr {
+  width: 30%;
+}
+.rooms__text {
+  color: #484d47;
+}
+
+.contact {
+  padding: 150px 0;
+}
+.contact__block {
+  margin-top: 40px;
+  display: flex;
+  height: 63vh;
+}
+.contact__left {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  background: #bd9a58;
+  width: 50%;
+  color: #fff;
+}
+.contact__descr {
+  margin-top: 25px;
+}
+.contact__descr:nth-child(1) {
+  margin-top: 0;
+}
+.contact__right {
+  width: 50%;
+  padding: 0 70px;
+  padding-top: 80px;
+}
+.contact__link {
+  color: #fff;
+}
+
+.form__text {
+  margin-top: 15px;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  background: #ededed;
+  border: none;
+  padding: 15px;
+}
+.form__data {
+  display: flex;
+  justify-content: space-between;
+}
+.form__person {
+  padding: 15px;
+  height: 55px;
+  width: 49%;
+  background: #ededed;
+  border: none;
+}
+.form__captcha {
+  padding: 15px;
+  height: 55px;
+  width: 55px;
+  background: #ededed;
+  border: none;
+  margin-right: 15px;
+}
+.form__submit {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 
 * {
