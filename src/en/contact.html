@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Clumsy Hans</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="upper">
+        <div class="upper__contacts">
+            <div class="container">
+                <a href="tel:+1234567" class="upper__contact"><img class="upper__icon" src="icons/phone.png" alt="phone"> +1234567</a>
+                <a href="mailto:excemple@gmail.com" class="upper__contact"><img class="upper__icon" src="icons/mail.png" alt="phone"> excemple@gmail.com</a>
+            </div>
+        </div>
+        
+        <div class="upper__menu">
+            <div class="container">
+                <div class="upper__wrapper">
+                    <a href="./index.html"><img src="" alt="logo" class="upper__logo"></a>
+
+                    <nav class="upper__links">
+                        <a href="./about.html" class="upper__link">About</a>
+                        <a href="./rooms.html" class="upper__link">Rooms</a>
+                        <a href="./contact.html" class="upper__link">Contact</a>
+                        <a href="./offers.html" class="upper__link">Offers</a>
+                        <a href="./faq.html" class="upper__link">Faq</a>
+                        <div class="upper__lang" id="change-lang">
+                            <img src="icons/flag-en.png" alt="flag" class="upper__lang">
+                            <a href="../dk/index.html"><img src="icons/flag-dk.png" alt="flag" class="upper__lang upper__lang_second"></a>
+                        </div>
+                        <a href="./faq.html" class="upper__link">Book now</a>
+                    </nav>
+                </div>
+                <div class="upper__mobile">
+                    <a href="./index.html"><img src="" alt="logo" class="upper__logo"></a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact">
+        <div class="title title_main">Contact us</div>
+        <div class="contact__block">
+            <div class="contact__left">
+                <div class="contact__descr"><img src="icons/location.png" class="upper__icon" alt="location"> Kongensgade 67A, 5000 Odense C</div>
+                <div class="contact__descr"><a href="tel:+1234567" class="contact__link"><img class="upper__icon" src="icons/phone.png" alt="phone"> +1234567</a></div>
+                <div class="contact__descr"><a href="mailto:excemple@gmail.com" class="contact__link"><img class="upper__icon" src="icons/mail.png" alt="phone"> excemple@gmail.com</a></div>
+            </div>
+            <div class="contact__right">
+                <form action="" class="form">
+                    <div class="form__data">
+                        <input placeholder="Name" type="text" name="name" id="" class="form__person">
+                        <input placeholder="E-Mail" type="email" name="email" id="" class="form__person">
+                    </div>
+                    <textarea placeholder="Message" name="message" class="form__text"></textarea>
+                    <div class="form__submit">
+<!--                         2 + 1 = 
+                        <input type="number" class="form__captcha"> -->
+                        <button type="submit" class="button button_send">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2265.690596810617!2d10.378277315886836!3d55.39830388045995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464cdffbb41cdf4b%3A0x6cc90cf6c773ce09!2sKongensgade%2067%2C%205000%20Odense!5e0!3m2!1sru!2sdk!4v1660931223529!5m2!1sru!2sdk" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <div class="title">Contact us</div>
+                    <a href="tel:+1234567" class="footer__link"><img class="upper__icon" src="icons/phone.png" alt="phone"> +1234567</a>
+                    <br>
+                    <a href="mailto:excemple@gmail.com" class="footer__link"><img class="upper__icon" src="icons/mail.png" alt="phone"> excemple@gmail.com</a>
+                </div>
+                <div class="footer__info">
+                    <div class="title">Address</div>
+                    Kongensgade 67A, <br> 5000 Odense C, <br> Denmark
+                </div>
+                <img src="./icons/hotelstars.png" alt="hotelstars" class="footer__img">
+                <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2265.690596810617!2d10.378277315886836!3d55.39830388045995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464cdffbb41cdf4b%3A0x6cc90cf6c773ce09!2sKongensgade%2067%2C%205000%20Odense!5e0!3m2!1sru!2sdk!4v1660931223529!5m2!1sru!2sdk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay" style="display: block;">
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">×</div>
+            <div class="modal__subtitle">Message sent successfully.</div>
+            <div class="modal__descr">Thanks for the feedback!</div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

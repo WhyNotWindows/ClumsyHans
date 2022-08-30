@@ -1,0 +1,41 @@
+.corporations {
+    padding-bottom: 90px;
+    &__block {
+        margin-top: 110px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        //height: 60vh;
+        &:nth-child(1) {
+            margin-top: 40px;
+        }
+    }
+    &__img {
+        width: 50%;
+        //height: 100%;
+    }
+    &__descr {
+        width: 40%;
+        font-size: 20px;
+    }
+    &__text {
+        color: $dark;
+        //opacity: .8;
+    }
+}
+
+@media(max-width:1024px) {
+    .corporations {
+        &__block {
+            flex-direction: column;
+            margin-top: 80px;
+        }
+        &__img {
+            width: 100%;
+            margin-top: 15px;
+        }
+        &__descr {
+            width: 100%;
+        }
+    }
+}

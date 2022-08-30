@@ -1,0 +1,58 @@
+.giftcard {
+    position: relative;
+    min-height: 80vh;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    &__descr {
+        margin-top: 40px;
+        width: 70%;
+        min-height: 370px;
+        padding: 60px;
+        font-size: 20px;
+        background: $main-color;
+        color: #fff;
+        line-height: 1.7;
+    }
+    &__img {
+        width: 35%;
+        position: absolute;
+        right: 0;
+        top: 15vh;
+    }
+    &__text {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:1024px) {
+    .giftcard {
+        min-height: 140vh;
+        &__descr {
+            width: 80%;
+        }
+        &__img {
+            z-index: -1;
+            height: 55vh;
+            width: 70%;
+            right: 0;
+            bottom: 0;
+            transform: translateY(100%);
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .giftcard {
+        min-height: 170vh;
+        &__descr {
+            width: 100%;
+            padding: 40px 20px;
+            line-height: 1.5;
+            //transform: translateY(90%);
+        }
+        &__img {
+            width: 100%;
+            transform: translateY(110%);
+        }
+    }
+}

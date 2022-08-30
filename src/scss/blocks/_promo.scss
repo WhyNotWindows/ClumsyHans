@@ -33,4 +33,39 @@
         font-size: 18px;
         background: $orange-light;
     }
+    &__helper {
+        display: none;
+    }
+}
+
+@media(max-width:1024px) {
+    .promo {
+        padding-bottom: 100px;
+        &__advantages {
+            width: 96%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__advantage {
+            height: 60px;
+            width: 150px;
+            line-height: 60px;
+            font-size: 15px;
+        }
+        &__helper {
+            display: block;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .promo {
+        padding-top: 150px;
+        &__advantages {
+            transform: translateY(65%);
+        }
+        &__advantage {
+            margin-top: 15px;
+        }
+    }
 }

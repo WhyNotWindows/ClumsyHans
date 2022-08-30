@@ -14,7 +14,7 @@
         right: 0;
         bottom: 80px;
         width: 45%;
-        height: 370px;
+        min-height: 370px;
         color: #fff;
         line-height: 1.7;
     }
@@ -24,5 +24,33 @@
     }
     &__link {
         color: #fff;
+    }
+}
+
+@media(max-width:1024px) {
+    .parking {
+        min-height: 150vh;
+        &__descr {
+            width: 70%;
+            top: 440px;
+            //transform: translateY(90%);
+        }
+        &__img {
+            width: 80%;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .parking {
+        min-height: 165vh;
+        &__descr {
+            padding: 30px;
+            width: 90%;
+            //transform: translateY(90%);
+        }
+        &__img {
+            width: 90%;
+        }
     }
 }

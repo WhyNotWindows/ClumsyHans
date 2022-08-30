@@ -15,4 +15,33 @@
         color: $main-color;
         font-size: 56px;
     }
+    &_faq {
+        margin-top: 30px;
+    }
+    &_lh0 {
+        line-height: 1;
+    }
+    &_mt {
+        margin-top: 40px;
+    }
+    &_tac {
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+@media(max-width:1024px) {
+    .title {
+        &_center {
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .title {
+        &_main {
+            font-size: 40px;
+        }
+    }
 }

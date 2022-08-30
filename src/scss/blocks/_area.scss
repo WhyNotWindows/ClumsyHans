@@ -14,4 +14,42 @@
         color: $dark;
         line-height: 1.6;
     }
+    &__map {
+        width: 400px;
+        height: 400px;
+    }
+    
+}
+
+@media(max-width:1024px) {
+    .area {
+        padding-left: 25px;
+        &__map {
+            //width: 38%;
+            padding: 2%;
+            //height: 500%;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .area {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__map {
+            margin-top: 30px;
+            width: 80%;
+        }
+        &__text {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .area {
+        
+    }
 }

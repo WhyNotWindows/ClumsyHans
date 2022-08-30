@@ -1,0 +1,131 @@
+.about {
+    padding: 150px 0;
+    &__block {
+        margin-top: 140px;
+        display: flex;
+        justify-content: space-between;
+        //align-items: center;
+        //height: 60vh;
+        &:nth-child(1) {
+            margin-top: 40px;
+        }
+    }
+    &__map {
+        width: 600px;
+        height: 600px;
+    }
+    &__img {
+        width: 47%;
+        height: 100%;
+    }
+    &__descr {
+        width: 49%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    &__text {
+        color: $dark;
+        margin-top: 15px;
+    }
+    &__rules {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    &__left {
+        width: 46%;
+    }
+    &__right {
+        width: 46%;
+    }
+    &__title {
+        margin-top: 10px;
+        line-height: 1.7;
+        font-weight: bold;
+    }
+    &__cards {
+        margin-top: 30px;
+    }
+    &__card {
+        width: 150px;
+        margin-right: 10px;
+    }
+    &__reasons {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__reason {
+        width: 230px;
+        font-size: 19px;
+        color: $dark;
+        text-align: center;
+    }
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        width: 90px;
+    }
+    &__bottom {
+        width: 100%;
+    }
+}
+
+@media(max-width:1024px) {
+    .about {
+        &__block {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 70px;
+        }
+        &__cards {
+            width: 500px;
+        }
+        &__descr {
+            margin: 30px 0;
+            width: 90%;
+        }
+        &__reasons {
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        &__reason {
+            margin-top: 20px;
+        }
+        &__map {
+            width: 90%;
+            height: 500px;
+        }
+        &__img {
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .about {
+        &__card {
+            width: 100px;
+        }
+        &__cards {
+            width: 340px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .about {
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            width: 100%;
+        }
+        &__descr {
+            flex-wrap: wrap;
+        }
+    }
+}
