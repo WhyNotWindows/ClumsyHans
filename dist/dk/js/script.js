@@ -21206,6 +21206,26 @@ window.addEventListener('DOMContentLoaded', function () {
   var lang = document.querySelector('#change-lang');
   lang.addEventListener('click', function () {
     lang.classList.toggle('upper__lang_active');
+  }); // slider
+
+  var slider = tns({
+    container: '.slider',
+    items: 1,
+    controls: false,
+    slideBy: 1,
+    //autoplay: true,
+    mouseDrag: true,
+    nav: false,
+    prevButton: '.controls__prev',
+    nextButton: '.controls__next',
+    responsive: {
+      1280: {
+        controls: true
+      },
+      1024: {
+        items: 3
+      }
+    }
   });
 });
 

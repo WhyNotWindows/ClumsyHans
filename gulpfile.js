@@ -6,10 +6,10 @@ const cleanCSS = require("gulp-clean-css");
 const postcss = require("gulp-postcss");
 const browsersync = require("browser-sync");
 
-const dist = "./dist/en";
+const dist = "./dist/dk";
 
 gulp.task("copy-html", () => {
-    return gulp.src("./src/en/*.html")
+    return gulp.src("./src/dk/*.html")
                 .pipe(gulp.dest(dist))
                 .pipe(browsersync.stream());
 });
@@ -69,7 +69,7 @@ gulp.task("watch", () => {
 		notify: true
     });
 
-    gulp.watch("./src/en/*.html", gulp.parallel("copy-html"));
+    gulp.watch("./src/dk/*.html", gulp.parallel("copy-html"));
     gulp.watch("./src/icons/**/*.*", gulp.parallel("copy-assets"));
     gulp.watch("./src/img/**/*.*", gulp.parallel("copy-assets"));
     gulp.watch("./src/scss/**/*.scss", gulp.parallel("build-sass"));

@@ -972,7 +972,7 @@
   width: 35%;
   position: absolute;
   right: 0;
-  top: 15vh;
+  top: 39%;
 }
 .giftcard__text {
   margin-top: 20px;
@@ -1049,6 +1049,7 @@
 }
 .inspiration__img {
   width: 300px;
+  height: 170px;
 }
 .inspiration__wrapper {
   margin-top: 50px;
