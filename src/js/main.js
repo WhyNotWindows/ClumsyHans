@@ -4,19 +4,38 @@ const { over } = require("lodash");
 
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.upper__menu');
+    const wrapper = document.querySelector('.upper__wrapper');
     const logo = document.querySelector('.upper__logo');
+    const menuMobile = document.querySelector('.upper__mobile');
+    const offers = document.querySelector('.upper__offers');
+    const hamburgerMobile = document.querySelector('.hamburger');
 
     if (window.pageYOffset == 0) {
-        menu.style.background = 'rgba(217, 193, 145, .2)';
+        menu.style.background = 'rgba(217, 193, 145, .4)';
+        //offers.style.background = 'rgba(217, 193, 145, .4)';
         logo.style.height = '100px';
+        menu.style.height = '114px';
+        wrapper.style.height = '100%';
+        menuMobile.style.height = "114px";
+        hamburgerMobile.style.top = "55%";
     }
     window.addEventListener('scroll', () => {
         if (window.pageYOffset == 0) {
-            menu.style.background = 'rgba(217, 193, 145, .2)';
+            menu.style.background = 'rgba(217, 193, 145, .4)';
+            //offers.style.background = 'rgba(217, 193, 145, .4)';
+            menu.style.height = '114px';
+            wrapper.style.height = '100%';
             logo.style.height = '100px';
+            menuMobile.style.height = "114px";
+            //hamburgerMobile.style.top = "50%";
         } else {
             logo.style.height = '60px';
+            menu.style.height = '74px';
+            wrapper.style.height = '100%';
             menu.style.background = 'rgba(255, 255, 255, 1)';
+            //offers.style.background = 'rgba(255, 255, 255, 1)';
+            menuMobile.style.height = "74px";
+            //hamburgerMobile.style.top = "7px";
         }
     });
 
@@ -115,7 +134,6 @@ window.addEventListener('DOMContentLoaded', () => {
     
     // slider
 
-    
     const slider = tns({
         container: '.slider',
         items: 1,

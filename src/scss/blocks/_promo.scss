@@ -2,19 +2,23 @@
     position: relative;
     min-height: 106vh;
     padding-top: 43vh;
-    background: rgba(217, 193, 145, .5);
+    //background: rgba(217, 193, 145, .5);
+    background: url(./../img/bg_main.jpeg) center (center/cover) no-repeat;
+    //background-position: 0 145px;
     &__header {
         font-size: 55px;
         color: #fff;
         text-transform: uppercase;
         font-family: 'Times New Roman', Times, serif;
+        text-shadow: -3px 0 2px $main-color, 0 3px 2px $main-color, 3px 0 2px $main-color, 0 -3px 2px $main-color;
     }
     &__subheader {
         margin-top: 20px;
-        font-size: 40px;
+        font-size: 35px;
         color: #fff;
         text-transform: uppercase;
         font-family: 'Times New Roman', Times, serif;
+        text-shadow: -3px 0 2px $main-color, 0 3px 2px $main-color, 3px 0 2px $main-color, 0 -3px 2px $main-color;
     }
     &__advantages {
         width: 100%;
@@ -32,6 +36,7 @@
         width: 250px;
         font-size: 18px;
         background: $orange-light;
+        color: black;
     }
     &__helper {
         display: none;
@@ -60,12 +65,19 @@
 
 @media(max-width:575px) {
     .promo {
+        background-position: 0;
         padding-top: 150px;
         &__advantages {
             transform: translateY(65%);
         }
         &__advantage {
             margin-top: 15px;
+        }
+        &__header {
+            font-size: 45px;
+        }
+        &__subheader {
+            font-size: 30px;
         }
     }
 }

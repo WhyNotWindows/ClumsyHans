@@ -5,6 +5,31 @@
     width: 100%;
     position: fixed;
     top: 0;
+    &__menu {
+        padding: 7px 0;
+    }
+    &__offers {
+        width: 65px;
+        transition: 0.5s all;
+        margin-right: 20px;
+        padding: 0 5px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 17px;
+        text-align: center;
+        background: transparent;
+        &:hover {
+            height: 115px;
+            width: 110px;
+            background: rgba(217, 193, 145, .7);
+        }
+    }
+    &__links {
+        display: flex;
+        //align-items: center;
+        height: 20px;
+    }
     &__contacts {
         padding-top: 4px;
         height: 34px;
@@ -32,9 +57,21 @@
     &__link {
         margin-right: 20px;
         color: $dark;
+        text-transform: uppercase;
         &:last-child {
             margin-right: 0;
         }
+    }
+    &__offer {
+        margin-top: 10px;
+        text-align: center;
+        margin-right: 0;
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+    }
+    #change-lang {
+        margin-top: -5px;
     }
     &__lang {
         cursor: pointer;
@@ -44,13 +81,11 @@
         margin-right: 20px;
         height: 30px;
         width: 30px;
-        margin-bottom: -10px;
         &_second {
-            margin-top: 5px;
+            margin-top: -7px;
         }
         &_active {
             height: 55px;
-            margin-bottom: -35px;
         }
     }
     &__mobile {
@@ -60,19 +95,31 @@
 
 @media(max-width:575px) {
     .upper {
+        &__menu {
+            padding: 0;
+        }
+        &__contacts {
+            height: auto;
+        }
+        &__contact {
+            display: block;
+            width: 280px;
+        }
         &__mobile {
             display: flex;
+            padding: 7px 0;
             justify-content: space-between;
             align-items: center;
         }
         &__wrapper {
             position: fixed;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 100%;
             width: 77%;
             left: -100%;
+            padding: 25px 0;
             z-index: 2;
             top: 0;
             background: rgba(189, 154, 88, 0.9);
@@ -81,14 +128,18 @@
                 left: 0;
             }
         }
+        &__offers {
+            height: 50px;
+            margin-top: 20px;
+        }
         &__links {
-            display: flex;
             flex-direction: column;
+            height: 100%;
         }
         &__link {
             font-size: 26px;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 20px;
             color: #fff;
         }
         #change-lang {
@@ -98,7 +149,6 @@
         &__logo {
             &_mobile {
                 margin-top: 40px;
-                //display: none;
             }
         }
     }

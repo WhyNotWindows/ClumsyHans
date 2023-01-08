@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clumsy Hans</title>
-    <link rel="stylesheet" href="/en/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 <body>
@@ -19,14 +19,19 @@
         <div class="upper__menu">
             <div class="container">
                 <div class="upper__wrapper">
-                    <a href="./index.html"><img src="" alt="logo" class="upper__logo upper__logo_mobile"></a>
+                    <a href="./index.html"><img src="icons/logo.png" alt="logo" class="upper__logo"></a>
 
                     <nav class="upper__links">
                         <a href="./about.html" class="upper__link">About</a>
                         <a href="./rooms.html" class="upper__link">Rooms</a>
                         <a href="./contact.html" class="upper__link">Contact</a>
-                        <a href="./offers.html" class="upper__link">Offers</a>
-                        <a href="./faq.html" class="upper__link">Faq</a>
+                        <div class="upper__offers">
+                            <a href="./offers.html" class="upper__link upper__offer">Offers</a>
+                            <a href="./offers.html#gift" class="upper__link upper__offer">Giftcard</a>
+                            <a href="./offers.html#corp" class="upper__link upper__offer">Business</a>
+                            <a href="./offers.html#insp" class="upper__link upper__offer">Inspiration</a>
+                        </div>
+                        <a href="./faq.html" class="upper__link">FAQ</a>
                         <div class="upper__lang" id="change-lang">
                             <img src="icons/flag-en.png" alt="flag" class="upper__lang">
                             <a href="../dk/index.html"><img src="icons/flag-dk.png" alt="flag" class="upper__lang upper__lang_second"></a>
@@ -35,19 +40,19 @@
                     </nav>
                 </div>
                 <div class="upper__mobile">
-                    <a href="./index.html"><img src="" alt="logo" class="upper__logo"></a>
+                    <a href="./index.html"><img src="icons/logo.png" alt="logo" class="upper__logo"></a>
+                </div>
 
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
     </div>
 
-    <section class="giftcard">
+    <section id="gift" class="giftcard">
         <div class="title title_main">Offers</div>
 
         <div class="container">
@@ -64,12 +69,12 @@
         </div>
     </section>
 
-    <section class="corporations">
+    <section id="corp" class="corporations">
         <div class="title title_tac">Corporations</div>
 
         <div class="container">
             <div class="corporations__block">
-                <img src="./img/DekoA.jpg" alt="room" class="corporations__img">
+                <img src="./img/corporation1.jpg" alt="room" class="corporations__img">
                 <div class="corporations__descr">
                     <div class="title title_rooms">Corporate discounts in a hotel</div>
                     <div class="corporations__text">
@@ -84,10 +89,10 @@
                         We help you throughout the entire process making sure that you get the best solution for your business. At the hotel, we secure fast check in (self-checking), a breakfast buffet with a great cup of coffee and a cold refreshment after work, or whenever it may suit you. The atmosphere at Clumsy Hans is informal and we help out whenever we can. Remember, whether you are relaxing in your room or in the cozy lounge areas, there is always the possibility to connect to the free WiFi.                        
                     </div>
                 </div>
-                <img src="./img/DekoB.jpg" alt="room" class="corporations__img">
+                <img src="./img/corporation2.jpeg" alt="room" class="corporations__img">
             </div>
             <div class="rooms__block">
-                <img src="./img/DekoC.jpg" alt="room" class="corporations__img">
+                <img src="./img/corporation3.jpg" alt="room" class="corporations__img">
                 <div class="corporations__descr">
                     <div class="title title_rooms">Get a non-binding offer</div>
                     <div class="corporations__text">
@@ -98,7 +103,7 @@
         </div>
     </section>
 
-    <section class="inspiration">
+    <section id="insp" class="inspiration">
         <div class="container">
             <div class="title title_tac">Inspiration</div>
             <div class="inspiration__wrapper">
@@ -157,9 +162,9 @@
             <div class="footer__wrapper">
                 <div class="footer__info">
                     <div class="title">Contact us</div>
-                    <a href="tel:+1234567" class="footer__link"><img class="upper__icon" src="icons/phone.png" alt="phone"> +1234567</a>
+                    <a href="tel:+4593200383" class="footer__link"><img class="upper__icon" src="icons/phone.png" alt="phone"> +4593200383</a>
                     <br>
-                    <a href="mailto:excemple@gmail.com" class="footer__link"><img class="upper__icon" src="icons/mail.png" alt="phone"> excemple@gmail.com</a>
+                    <a href="mailto:hotel@kongensgaard-odense.dk" class="footer__link"><img class="upper__icon" src="icons/mail.png" alt="phone"> hotel@kongensgaard-odense.dk</a>
                 </div>
                 <div class="footer__info">
                     <div class="title">Address</div>

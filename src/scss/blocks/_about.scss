@@ -45,6 +45,7 @@
     }
     &__cards {
         margin-top: 30px;
+        width: 350px;
     }
     &__card {
         width: 150px;
@@ -81,7 +82,7 @@
             margin-top: 70px;
         }
         &__cards {
-            width: 500px;
+            //width: 500px;
         }
         &__descr {
             margin: 30px 0;
@@ -107,7 +108,7 @@
 @media(max-width:768px) {
     .about {
         &__card {
-            width: 100px;
+            width: 150px;
         }
         &__cards {
             width: 340px;
@@ -118,6 +119,9 @@
 
 @media(max-width:575px) {
     .about {
+        &__card {
+            width: 130px;
+        }
         &__left {
             width: 100%;
         }
@@ -126,6 +130,9 @@
         }
         &__descr {
             flex-wrap: wrap;
+        }
+        &__block {
+            margin-top: 30px;
         }
     }
 }

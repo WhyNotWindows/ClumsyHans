@@ -3,45 +3,44 @@
     min-height: 80vh;
     padding: 80px 0;
     &__descr {
-        display: flex;
         align-items: center;
         width: 70%;
         min-height: 370px;
-        padding: 60px;
+        padding: 100px;
         background: $main-color;
         color: #fff;
         line-height: 1.7;
     }
     &__img {
         width: 35%;
-        height: 300px;
+        //height: 340px;
         position: absolute;
         right: 0;
-        top: 120px;
+        top: 95px;
         background: rgba(217, 193, 145, .5);
     }
 }
 
 @media(max-width:1024px) {
     .andersen {
-        min-height: 140vh;
+        min-height: 170vh;
         &__descr {
             width: 80%;
+            padding: 40px;
         }
         &__img {
+            position: static;
             z-index: -1;
-            height: 55vh;
+            //height: 55vh;
             width: 70%;
-            right: 0;
-            bottom: 0;
-            transform: translateY(100%);
+            float: right;
         }
     }
 }
 
 @media(max-width:576px) {
     .andersen {
-        min-height: 170vh;
+        height: auto;
         &__descr {
             width: 100%;
             padding: 40px 20px;
@@ -49,8 +48,10 @@
             //transform: translateY(90%);
         }
         &__img {
+            position: static;
             width: 100%;
-            transform: translateY(110%);
+            height: auto;
+            transform: none;
         }
     }
 }

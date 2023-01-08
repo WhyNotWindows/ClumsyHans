@@ -3,20 +3,22 @@
   position: relative;
   min-height: 106vh;
   padding-top: 43vh;
-  background: rgba(217, 193, 145, 0.5);
+  background: url(./../img/bg_main.jpeg) center center/cover no-repeat;
 }
 .promo__header {
   font-size: 55px;
   color: #fff;
   text-transform: uppercase;
   font-family: "Times New Roman", Times, serif;
+  text-shadow: -3px 0 2px #bd9a58, 0 3px 2px #bd9a58, 3px 0 2px #bd9a58, 0 -3px 2px #bd9a58;
 }
 .promo__subheader {
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 35px;
   color: #fff;
   text-transform: uppercase;
   font-family: "Times New Roman", Times, serif;
+  text-shadow: -3px 0 2px #bd9a58, 0 3px 2px #bd9a58, 3px 0 2px #bd9a58, 0 -3px 2px #bd9a58;
 }
 .promo__advantages {
   width: 100%;
@@ -34,6 +36,7 @@
   width: 250px;
   font-size: 18px;
   background: #d9c191;
+  color: black;
 }
 .promo__helper {
   display: none;
@@ -60,6 +63,7 @@
 }
 @media (max-width: 575px) {
   .promo {
+    background-position: 0;
     padding-top: 150px;
   }
   .promo__advantages {
@@ -67,6 +71,12 @@
   }
   .promo__advantage {
     margin-top: 15px;
+  }
+  .promo__header {
+    font-size: 45px;
+  }
+  .promo__subheader {
+    font-size: 30px;
   }
 }
 .upper {
@@ -76,6 +86,30 @@
   width: 100%;
   position: fixed;
   top: 0;
+}
+.upper__menu {
+  padding: 7px 0;
+}
+.upper__offers {
+  width: 65px;
+  transition: 0.5s all;
+  margin-right: 20px;
+  padding: 0 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 17px;
+  text-align: center;
+  background: transparent;
+}
+.upper__offers:hover {
+  height: 115px;
+  width: 110px;
+  background: rgba(217, 193, 145, 0.7);
+}
+.upper__links {
+  display: flex;
+  height: 20px;
 }
 .upper__contacts {
   padding-top: 4px;
@@ -104,9 +138,21 @@
 .upper__link {
   margin-right: 20px;
   color: #484d47;
+  text-transform: uppercase;
 }
 .upper__link:last-child {
   margin-right: 0;
+}
+.upper__offer {
+  margin-top: 10px;
+  text-align: center;
+  margin-right: 0;
+}
+.upper__offer:nth-child(1) {
+  margin-top: 0;
+}
+.upper #change-lang {
+  margin-top: -5px;
 }
 .upper__lang {
   cursor: pointer;
@@ -116,33 +162,43 @@
   margin-right: 20px;
   height: 30px;
   width: 30px;
-  margin-bottom: -10px;
 }
 .upper__lang_second {
-  margin-top: 5px;
+  margin-top: -7px;
 }
 .upper__lang_active {
   height: 55px;
-  margin-bottom: -35px;
 }
 .upper__mobile {
   display: none;
 }
 
 @media (max-width: 575px) {
+  .upper__menu {
+    padding: 0;
+  }
+  .upper__contacts {
+    height: auto;
+  }
+  .upper__contact {
+    display: block;
+    width: 280px;
+  }
   .upper__mobile {
     display: flex;
+    padding: 7px 0;
     justify-content: space-between;
     align-items: center;
   }
   .upper__wrapper {
     position: fixed;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 77%;
     left: -100%;
+    padding: 25px 0;
     z-index: 2;
     top: 0;
     background: rgba(189, 154, 88, 0.9);
@@ -151,14 +207,18 @@
   .upper__wrapper_active {
     left: 0;
   }
+  .upper__offers {
+    height: 50px;
+    margin-top: 20px;
+  }
   .upper__links {
-    display: flex;
     flex-direction: column;
+    height: 100%;
   }
   .upper__link {
     font-size: 26px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     color: #fff;
   }
   .upper #change-lang {
@@ -238,6 +298,15 @@
     width: 100%;
   }
 }
+@media (max-width: 575px) {
+  .area {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  .area__map {
+    width: 100%;
+  }
+}
 .title {
   line-height: 1.6;
   font-size: 34px;
@@ -276,8 +345,14 @@
   }
 }
 @media (max-width: 575px) {
+  .title {
+    line-height: 1.2;
+  }
+  .title_lh0 {
+    margin-top: 40px;
+  }
   .title_main {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 .variants {
@@ -377,7 +452,6 @@
 }
 .parking__img {
   width: 65%;
-  height: 400px;
   background: rgba(217, 193, 145, 0.5);
 }
 .parking__descr {
@@ -413,14 +487,17 @@
 }
 @media (max-width: 576px) {
   .parking {
-    min-height: 165vh;
+    padding-bottom: 0;
+    min-height: auto;
   }
   .parking__descr {
+    min-height: auto;
+    position: static;
     padding: 30px;
-    width: 90%;
+    width: 100%;
   }
   .parking__img {
-    width: 90%;
+    width: 100%;
   }
 }
 .andersen {
@@ -429,43 +506,40 @@
   padding: 80px 0;
 }
 .andersen__descr {
-  display: flex;
   align-items: center;
   width: 70%;
   min-height: 370px;
-  padding: 60px;
+  padding: 100px;
   background: #bd9a58;
   color: #fff;
   line-height: 1.7;
 }
 .andersen__img {
   width: 35%;
-  height: 300px;
   position: absolute;
   right: 0;
-  top: 120px;
+  top: 95px;
   background: rgba(217, 193, 145, 0.5);
 }
 
 @media (max-width: 1024px) {
   .andersen {
-    min-height: 140vh;
+    min-height: 170vh;
   }
   .andersen__descr {
     width: 80%;
+    padding: 40px;
   }
   .andersen__img {
+    position: static;
     z-index: -1;
-    height: 55vh;
     width: 70%;
-    right: 0;
-    bottom: 0;
-    transform: translateY(100%);
+    float: right;
   }
 }
 @media (max-width: 576px) {
   .andersen {
-    min-height: 170vh;
+    height: auto;
   }
   .andersen__descr {
     width: 100%;
@@ -473,8 +547,10 @@
     line-height: 1.5;
   }
   .andersen__img {
+    position: static;
     width: 100%;
-    transform: translateY(110%);
+    height: auto;
+    transform: none;
   }
 }
 .footer {
@@ -548,7 +624,7 @@
 @media (max-width: 1024px) {
   .rooms__block {
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 60px;
   }
   .rooms__img {
     width: 100%;
@@ -577,6 +653,7 @@
   color: #fff;
 }
 .contact__descr {
+  color: #fff;
   margin-top: 25px;
 }
 .contact__descr:nth-child(1) {
@@ -625,6 +702,7 @@
   background: #ededed;
   border: none;
   padding: 15px;
+  border: 2px solid #D1B000;
 }
 .form__data {
   display: flex;
@@ -636,6 +714,7 @@
   width: 49%;
   background: #ededed;
   border: none;
+  border: 2px solid #D1B000;
 }
 .form__captcha {
   padding: 15px;
@@ -787,6 +866,7 @@
 }
 .about__cards {
   margin-top: 30px;
+  width: 350px;
 }
 .about__card {
   width: 150px;
@@ -820,9 +900,6 @@
     align-items: center;
     margin-top: 70px;
   }
-  .about__cards {
-    width: 500px;
-  }
   .about__descr {
     margin: 30px 0;
     width: 90%;
@@ -844,7 +921,7 @@
 }
 @media (max-width: 768px) {
   .about__card {
-    width: 100px;
+    width: 150px;
   }
   .about__cards {
     width: 340px;
@@ -852,6 +929,9 @@
   }
 }
 @media (max-width: 575px) {
+  .about__card {
+    width: 130px;
+  }
   .about__left {
     width: 100%;
   }
@@ -861,6 +941,9 @@
   .about__descr {
     flex-wrap: wrap;
   }
+  .about__block {
+    margin-top: 30px;
+  }
 }
 .hamburger {
   display: none;
@@ -869,8 +952,8 @@
 @media (max-width: 575px) {
   .hamburger {
     position: absolute;
-    top: 45px;
-    right: 15px;
+    top: 70px;
+    right: 10px;
     padding: 11px 9px;
     display: block;
     width: 39px;
@@ -996,7 +1079,8 @@
 }
 @media (max-width: 576px) {
   .giftcard {
-    min-height: 170vh;
+    min-height: 200vh;
+    padding-bottom: 200px;
   }
   .giftcard__descr {
     width: 100%;
@@ -1005,7 +1089,8 @@
   }
   .giftcard__img {
     width: 100%;
-    transform: translateY(110%);
+    height: auto;
+    transform: translateY(170%);
   }
 }
 .corporations {
@@ -1042,6 +1127,10 @@
   }
   .corporations__descr {
     width: 100%;
+    margin-top: 25px;
+  }
+  .corporations__text {
+    margin-top: 15px;
   }
 }
 .inspiration {
@@ -1067,6 +1156,7 @@
   margin-top: 20px;
   font-size: 28px;
   text-align: center;
+  color: black;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -1124,6 +1214,6 @@ a {
 }
 @media (max-width: 575px) {
   .container {
-    padding: 0 15px;
+    padding: 0 10px;
   }
 }

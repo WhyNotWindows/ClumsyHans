@@ -43,7 +43,8 @@
 
 @media(max-width:576px) {
     .giftcard {
-        min-height: 170vh;
+        min-height: 200vh;
+        padding-bottom: 200px;
         &__descr {
             width: 100%;
             padding: 40px 20px;
@@ -52,7 +53,8 @@
         }
         &__img {
             width: 100%;
-            transform: translateY(110%);
+            height: auto;
+            transform: translateY(170%);
         }
     }
 }

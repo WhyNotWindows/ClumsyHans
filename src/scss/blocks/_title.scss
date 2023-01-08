@@ -40,8 +40,12 @@
 
 @media(max-width:575px) {
     .title {
+        line-height: 1.2;
+        &_lh0 {
+            margin-top: 40px;
+        }
         &_main {
-            font-size: 40px;
+            font-size: 30px;
         }
     }
 }

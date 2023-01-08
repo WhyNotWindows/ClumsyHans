@@ -50,6 +50,10 @@
 
 @media(max-width:575px) {
     .area {
-        
+        padding-left: 10px;
+        padding-right: 5px;
+        &__map {
+            width: 100%;
+        }
     }
 }
