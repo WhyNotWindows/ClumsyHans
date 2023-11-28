@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Beautiful Hotel in the heart of Odense">
+    <meta name="keywords" content="Hotel Odense, Hotel, Room Odense, Odense center, Book a hotel, Odense tourism">
+    <meta name="author" content="Yaroslav Haidash (renovaine.com)">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
     <title>Kontakt | Clumsy Hans</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,7 +15,7 @@
         <div class="upper__contacts">
             <div class="container">
                 <a href="tel:+4593200383" class="upper__contact"><img class="upper__icon" src="icons/phone.png" alt="phone"> +45 93 20 03 83</a>
-                <a href="mailto:hotel@kongensgaard-odense.dk" class="upper__contact"><img class="upper__icon" src="icons/mail.png" alt="phone"> hotel@kongensgaard-odense.dk</a>
+                <a href="mailto:hotel@clumsyhans.dk" class="upper__contact"><img class="upper__icon" src="icons/mail.png" alt="phone"> hotel@clumsyhans.dk</a>
             </div>
         </div>
         
@@ -56,19 +60,17 @@
             <div class="contact__left">
                 <div class="contact__descr"><img src="icons/location.png" class="upper__icon" alt="location"> Kongensgade 67A, 5000 Odense C</div>
                 <div class="contact__descr"><a href="tel:+4593200383" class="contact__link"><img class="upper__icon" src="icons/phone.png" alt="phone"> +4593200383</a></div>
-                <div class="contact__descr"><a href="mailto:hotel@kongensgaard-odense.dk" class="contact__link"><img class="upper__icon" src="icons/mail.png" alt="phone"> hotel@kongensgaard-odense.dk</a></div>
+                <div class="contact__descr"><a href="mailto:hotel@clumsyhans.dk" class="contact__link"><img class="upper__icon" src="icons/mail.png" alt="phone"> hotel@clumsyhans.dk</a></div>
             </div>
             <div class="contact__right">
-                <form action="" class="form">
+                <form class="form">
                     <div class="form__data">
-                        <input placeholder="Navn" type="text" name="name" id="" class="form__person">
-                        <input placeholder="E-Mail" type="email" name="email" id="" class="form__person">
+                        <input placeholder="Navn" type="text" name="name" id="name" class="form__person">
+                        <input placeholder="E-Mail" type="email" name="email" id="email" class="form__person">
                     </div>
-                    <textarea placeholder="Besked" name="message" class="form__text"></textarea>
+                    <textarea placeholder="Besked" name="message" id="message" class="form__text"></textarea>
                     <div class="form__submit">
-<!--                         2 + 1 = 
-                        <input type="number" class="form__captcha"> -->
-                        <button type="submit" class="button button_send">Send</button>
+                        <button type="submit" id="btn" class="button button_send">Send</button>
                     </div>
                 </form>
             </div>
@@ -83,7 +85,7 @@
                     <div class="title">Kontakt os</div>
                     <a href="tel:+4593200383" class="footer__link"><img class="upper__icon" src="icons/phone.png" alt="phone"> +4593200383</a>
                     <br>
-                    <a href="mailto:hotel@kongensgaard-odense.dk" class="footer__link"><img class="upper__icon" src="icons/mail.png" alt="phone"> hotel@kongensgaard-odense.dk</a>
+                    <a href="mailto:hotel@clumsyhans.dk" class="footer__link"><img class="upper__icon" src="icons/mail.png" alt="phone"> hotel@clumsyhans.dk</a>
                 </div>
                 <div class="footer__info">
                     <div class="title">Adresse</div>
@@ -103,6 +105,7 @@
         </div>
     </div>
     
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

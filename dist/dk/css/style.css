@@ -620,6 +620,10 @@
 .rooms__text {
   color: #484d47;
 }
+.rooms__link {
+  color: #bd9a58;
+  text-decoration: underline;
+}
 
 @media (max-width: 1024px) {
   .rooms__block {

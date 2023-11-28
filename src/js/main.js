@@ -107,20 +107,58 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
 
     if (form) {
+        //const btn = document.getElementById('btn');
         form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const formData = new FormData(form);
-    
-            fetch('php/smart.php', {
-                method: 'POST',
-                body: formData
-            }).then(() => {
-                openModal();
-            }).catch(() => {
-                console.log('Error: Message was not send');
-            }).finally(() => {
-                form.reset();
-            });
+            //e.preventDefault;
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            var body = 'Name: ' + name + '<br/> Email: ' + email + '<br/> Message: ' + message;
+
+/*             Email.send({
+                //SecureToken : "96817efc-c022-4d9a-a2a6-a9ecd4d69c1f",
+                SecureToken : "4383e51c-5eeb-425e-bdfa-1dcca49d8adf",
+                To : 'hotel@clumsyhans.dk',
+                From : "yaroslavgajdash@gmail.com",
+                Subject : "New Message From ClumsyHans.dk!",
+                Body : body
+            }).then(
+                alert("Message sent")
+            );
+            openModal(); */
+            
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "hotel@clumsyhans.dk",
+                Password : "1A0A3B0EB1B018DC5A2E3CDB9DB2F04913AE",
+                To : 'hotel@clumsyhans.dk',
+                From : "hotel@clumsyhans.dk",
+                Subject : "New Message From ClumsyHans.dk!",
+                Body : body
+            }).then(
+                alert('message sent')
+            )/* .then(
+                message => alert(message)
+            ) */;
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "hotel@clumsyhans.dk",
+                Password : "1A0A3B0EB1B018DC5A2E3CDB9DB2F04913AE",
+                To : 'tlh@lund-gruppen.dk',
+                From : "hotel@clumsyhans.dk",
+                Subject : "New Message From ClumsyHans.dk!",
+                Body : body
+            })
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "hotel@clumsyhans.dk",
+                Password : "1A0A3B0EB1B018DC5A2E3CDB9DB2F04913AE",
+                To : 'ilh@lund-gruppen.dk',
+                From : "hotel@clumsyhans.dk",
+                Subject : "New Message From ClumsyHans.dk!",
+                Body : body
+            })
+            openModal();
         });
     }
 
@@ -133,25 +171,27 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     
     // slider
-
-    const slider = tns({
-        container: '.slider',
-        items: 1,
-        controls: false,
-        slideBy: 1,
-        //autoplay: true,
-        mouseDrag: true,
-        nav: false,
-        prevButton: '.controls__prev',
-        nextButton: '.controls__next',
-        responsive: {
-            1280: {
-                controls: true
-            },
-            1024: {
-                items: 3
+    const inspiration = document.getElementById('insp');
+    if(inspiration) {
+        const slider = tns({
+            container: '.slider',
+            items: 1,
+            controls: false,
+            slideBy: 1,
+            //autoplay: true,
+            mouseDrag: true,
+            nav: false,
+            prevButton: '.controls__prev',
+            nextButton: '.controls__next',
+            responsive: {
+                1280: {
+                    controls: true
+                },
+                1024: {
+                    items: 3
+                }
             }
-        }
-    });
+        });
+    }
 
 });

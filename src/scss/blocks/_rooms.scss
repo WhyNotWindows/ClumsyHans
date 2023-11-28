@@ -22,6 +22,10 @@
         color: $dark;
         //opacity: .8;
     }
+    &__link {
+        color: $main-color;
+        text-decoration: underline;
+    }
 }
 
 @media(max-width:1024px) {
